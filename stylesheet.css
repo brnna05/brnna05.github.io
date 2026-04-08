@@ -1,0 +1,93 @@
+body {
+  font-family: monospace;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    #1a1a2e 0px,
+    #1a1a2e 20px,
+    #1f1f38 20px,
+    #1f1f38 40px
+  );
+  background-size: 80px 80px;
+  animation: movelines 4s linear infinite;
+}
+
+@keyframes movelines {
+  from { background-position: 0 0; }
+  to   { background-position: 80px 80px; }
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  padding: 1.5rem 0 0.5rem;
+  color: #c9b8e8;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0;
+  color: #ac9ec6;
+}
+
+a {
+  color: #a78bca;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+a:hover {
+  text-decoration: wavy underline;
+  background: linear-gradient(45deg, #2f2fd6, #aef2fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.album-card {
+  background: radial-gradient(circle, #4a3f6b 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: movelines 3s linear infinite;
+  background-color: #1a1a2e;
+  animation: movelines 5s linear infinite;
+  border: 1px solid #4a3f6b;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 16px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.album-card img {
+  border-radius: 6px;
+  margin-top: 12px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.album-card p {
+  color: #b0a0cc;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+#page-header {
+  background-color: #12122a;
+  border-bottom: 2px solid #4a3f6b;
+  padding: 10px 0 20px;
+  margin-bottom: 10px;
+}
+
+#page-header p {
+  text-align: center;
+  color: #9988bb;
+  font-size: 0.95rem;
+  margin: 0;
+}
